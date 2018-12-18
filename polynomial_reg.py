@@ -40,6 +40,5 @@ plt.show()
 from sklearn.preprocessing import PolynomialFeatures
 polyReg = PolynomialFeatures (degree =3)
 X_poly = poly_reg.fit_transform(X)
-
-L_in_reg2 = LinearRegression()
-Lin_reg2.fit(X_poly, y)
+L_in_reg3 = LinearRegression()
+Lin_reg3.fit(X_poly, y)
