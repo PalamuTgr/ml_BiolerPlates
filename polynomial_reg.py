@@ -32,3 +32,14 @@ plt.title(‘Salary vs Experience(‘Polynomial Regression’)’)
 plt.xlabel(‘Years of experience’)
 plt.ylabel(‘Salary’)
 plt.show()
+
+
+
+# Polynomial Regression of Degree 3
+
+from sklearn.preprocessing import PolynomialFeatures
+polyReg = PolynomialFeatures (degree =3)
+X_poly = poly_reg.fit_transform(X)
+
+L_in_reg2 = LinearRegression()
+Lin_reg2.fit(X_poly, y)
